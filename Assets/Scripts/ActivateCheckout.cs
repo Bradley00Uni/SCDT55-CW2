@@ -30,7 +30,7 @@ public class ActivateCheckout : MonoBehaviour
 
     void ActivateCheckoutScript()
     {
-            vp.url = "Assets/Videos/CheckoutIntro.mp4";
+            vp.url = "Assets/Videos/CheckoutVideo.mp4";
             checkoutVideo.SetActive(true);
             checkoutWall.SetActive(true);
             vp.Play();

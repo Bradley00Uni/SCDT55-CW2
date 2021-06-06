@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Alcohol
+  - Medicine
+  - Danger
+  - Sign
+  - Security
   layers:
   - Default
   - TransparentFX
