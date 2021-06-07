@@ -9,6 +9,7 @@ TagManager:
   - Danger
   - Sign
   - Security
+  - Cleaning
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - 
   - Grab
   - Body
-  - 
+  - HandGrab
   - 
   - 
   - 

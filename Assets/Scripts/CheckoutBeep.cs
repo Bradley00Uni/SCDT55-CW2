@@ -12,6 +12,7 @@ public class CheckoutBeep : MonoBehaviour
     public GameObject videoPlayer;
     public GameObject exitPlayer;
     public GameObject checkoutExit;
+    public GameObject cleaningWall;
 
     public GameObject alcoholLight;
     public GameObject medicineLight;
@@ -102,5 +103,6 @@ public class CheckoutBeep : MonoBehaviour
         exitPlayer.SetActive(false);
         checkoutExit.SetActive(false);
         self.SetActive(false);
+        cleaningWall.SetActive(false);
     }
 }

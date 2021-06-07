@@ -8,10 +8,12 @@ public class ActivateCheckout : MonoBehaviour
     public GameObject checkoutVideo;
     public GameObject checkoutWall;
     public GameObject self;
+
     VideoPlayer vp;
 
     void Start()
     {
+        checkoutVideo.SetActive(false);
        vp = checkoutVideo.GetComponent<VideoPlayer>();
     }
 
