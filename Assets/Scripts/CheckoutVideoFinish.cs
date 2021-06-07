@@ -23,5 +23,4 @@ public class CheckoutVideoFinish : MonoBehaviour
     {
         vp.SetActive(false);
     }
-
 }

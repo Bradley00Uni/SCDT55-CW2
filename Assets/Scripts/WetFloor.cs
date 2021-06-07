@@ -13,6 +13,9 @@ public class WetFloor : MonoBehaviour
     public GameObject deskWall;
     public GameObject spillWall;
 
+    bool m;
+    bool v;
+
     int mopCount;
     VideoPlayer player;
 
@@ -20,33 +23,59 @@ public class WetFloor : MonoBehaviour
     {
         player = screen.GetComponent<VideoPlayer>();
         mopCount = 0;
-    }
+        m = false; v = false;
 
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.tag == "Cleaning"){mopCount++;}
+        deskWall.SetActive(true);
+        spillWall.SetActive(true);
     }
 
     void Update()
     {
-        player.loopPointReached += EndVideo;
-
-        if(mopCount >= 4)
+        if (mopCount >= 4)
         {
             mop.SetActive(false);
             self.SetActive(false);
             mopCount = 0;
+            m = true;
         }
 
-        if(!mop.activeSelf && !screen.activeSelf)
+        if (!m)
         {
-            deskWall.SetActive(false);
-            spillWall.SetActive(false);
+            player.loopPointReached += EndVideo;
         }
+        else if (m && !v)
+        {
+            EndSection();
+        }
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Cleaning") { mopCount++; }
     }
 
     void EndVideo(UnityEngine.Video.VideoPlayer vid)
     {
         screen.SetActive(false);
+
+        if(m && v)
+        {
+            Close();
+        }
+    }
+
+    void EndSection()
+    {
+        player.url = "Assets/Videos/SpillEndVideo.mp4";
+        screen.SetActive(true);
+        player.Play();
+        v = true;
+    }
+
+    void Close()
+    {
+        screen.SetActive(false);
+        deskWall.SetActive(false);
+        spillWall.SetActive(false);
     }
 }

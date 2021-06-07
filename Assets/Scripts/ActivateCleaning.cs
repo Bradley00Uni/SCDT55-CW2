@@ -36,8 +36,6 @@ public class ActivateCleaning : MonoBehaviour
     {
         screen.SetActive(true);
         player.url = "Assets/Videos/SpillVideo.mp4";
-        deskWall.SetActive(true);
-        spillWall.SetActive(true);
         player.Play();
         self.SetActive(false);
     }
