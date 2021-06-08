@@ -66,7 +66,7 @@ public class WetFloor : MonoBehaviour
 
     void EndSection()
     {
-        player.url = "Assets/Videos/SpillEndVideo.mp4";
+        player.url = Application.persistentDataPath + "/SpillEndVideo.mp4";
         screen.SetActive(true);
         player.Play();
         v = true;

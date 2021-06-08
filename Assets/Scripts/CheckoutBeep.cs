@@ -45,27 +45,28 @@ public class CheckoutBeep : MonoBehaviour
         {
             type = "Alcohol";
             videoPlayer.SetActive(true);
-            player.url = "Assets/Videos/AlcoholVideo.mp4";
+            player.url = Application.persistentDataPath + "/AlcoholVideo.mp4";
             player.Play();
         }
         else if (col.gameObject.tag == "Medicine")
         {
             type = "Medicine";
             videoPlayer.SetActive(true);
-            player.url = "Assets/Videos/MedicineVideo.mp4";
+            player.url = Application.persistentDataPath + "/MedicineVideo.mp4";
             player.Play();
         }
         else if (col.gameObject.tag == "Security")
         {
             type = "Security";
             videoPlayer.SetActive(true);
-            player.url = "Assets/Videos/SecurityVideo.mp4";
+            player.url = Application.persistentDataPath + "/SecurityVideo.mp4";
             player.Play();
         }
     }
 
     void Update()
     {
+
         if (a && m && s)
         {
             exitPlayer.SetActive(true);

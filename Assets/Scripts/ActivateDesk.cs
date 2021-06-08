@@ -33,7 +33,7 @@ public class ActivateDesk : MonoBehaviour
     void ActivateDeskScript()
     {
         screen.SetActive(true);
-        player.url = "Assets/Videos/DeskVideo.mp4";
+        player.url = Application.persistentDataPath + "/DeskVideo.mp4";
         player.Play();
 
         wall.SetActive(true);

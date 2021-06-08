@@ -1,11 +1,16 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ActivateCheckout
+    - ActivateCleaning
+    - ActivateDesk
     - CheckoutBeep
+    - CheckoutVideoFinish
     - ContinuousMovement
     - FirstVideoFinish
     - ONSPSettings
     - OvrAvatarSettings
+    - WetFloor
     Oculus.VR.Editor.dll:
     - Assets.Oculus.VR.Editor.OVRPlatformToolSettings
     Unity.InputSystem.dll:
@@ -17,7 +22,6 @@ ScriptsOnlyBuild:
     Unity.XR.Interaction.Toolkit.dll:
     - UnityEngine.XR.Interaction.Toolkit.DeviceBasedSnapTurnProvider
     - UnityEngine.XR.Interaction.Toolkit.LocomotionSystem
-    - UnityEngine.XR.Interaction.Toolkit.TeleportationProvider
     - UnityEngine.XR.Interaction.Toolkit.XRController
     - UnityEngine.XR.Interaction.Toolkit.XRDirectInteractor
     - UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable
@@ -25,6 +29,7 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual
     - UnityEngine.XR.Interaction.Toolkit.XRRayInteractor
     - UnityEngine.XR.Interaction.Toolkit.XRRig
+    - UnityEngine.XR.Interaction.Toolkit.XRSocketInteractor
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     Unity.XR.Management.dll:
@@ -82,41 +87,49 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11814}
+      Script: {instanceID: 11714}
     - Class: 114
-      Script: {instanceID: 11890}
+      Script: {instanceID: 11870}
     - Class: 114
-      Script: {instanceID: 11930}
+      Script: {instanceID: 11896}
     - Class: 114
-      Script: {instanceID: 12448}
+      Script: {instanceID: 11936}
     - Class: 114
-      Script: {instanceID: 12460}
+      Script: {instanceID: 12098}
     - Class: 114
-      Script: {instanceID: 12548}
+      Script: {instanceID: 12456}
     - Class: 114
-      Script: {instanceID: 13680}
+      Script: {instanceID: 12468}
+    - Class: 114
+      Script: {instanceID: 12556}
+    - Class: 114
+      Script: {instanceID: 12922}
+    - Class: 114
+      Script: {instanceID: 12950}
+    - Class: 114
+      Script: {instanceID: 13456}
     - Class: 114
       Script: {instanceID: 13692}
     - Class: 114
-      Script: {instanceID: 14096}
+      Script: {instanceID: 13704}
     - Class: 114
-      Script: {instanceID: 14226}
+      Script: {instanceID: 14108}
     - Class: 114
-      Script: {instanceID: 14494}
+      Script: {instanceID: 14238}
     - Class: 114
-      Script: {instanceID: 14554}
+      Script: {instanceID: 14240}
     - Class: 114
-      Script: {instanceID: 14626}
+      Script: {instanceID: 14508}
     - Class: 114
-      Script: {instanceID: 14804}
+      Script: {instanceID: 14568}
     - Class: 114
-      Script: {instanceID: 15032}
+      Script: {instanceID: 14634}
     - Class: 114
-      Script: {instanceID: 15152}
+      Script: {instanceID: 14642}
     - Class: 114
-      Script: {instanceID: 21394}
+      Script: {instanceID: 15046}
     - Class: 114
-      Script: {instanceID: 40108}
+      Script: {instanceID: 15166}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -126,6 +139,8 @@ ScriptsOnlyBuild:
     - Class: 137
       Script: {instanceID: 0}
     - Class: 143
+      Script: {instanceID: 0}
+    - Class: 153
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -308,6 +323,12 @@ ScriptsOnlyBuild:
     className: OVRDebugHeadController
   - hash:
       serializedVersion: 2
+      Hash: 3e3a90ecec27db3e9349e0836c3fff1d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheckoutBeep
+  - hash:
+      serializedVersion: 2
       Hash: fc169718e5fd24cea7425f24908c0418
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -408,6 +429,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Oculus.dll
     namespaceName: Unity.XR.Oculus
     className: OculusLoader
+  - hash:
+      serializedVersion: 2
+      Hash: 682713ed016131e278d5c7c8aa71a4c8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WetFloor
   - hash:
       serializedVersion: 2
       Hash: a72489c8bd496f23c1a96d7902ce6765
@@ -534,6 +561,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputActionEditorWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 2d28885d5432851b3134ac59772bb742
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ActivateCheckout
   - hash:
       serializedVersion: 2
       Hash: e7dac3c9100823d6e750582bb7d6b5f8
@@ -950,6 +983,12 @@ ScriptsOnlyBuild:
     className: ONSPReflectionZone
   - hash:
       serializedVersion: 2
+      Hash: c928363c6300fea57e6301e63ae5b7b8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ActivateCleaning
+  - hash:
+      serializedVersion: 2
       Hash: cd0ecdca0166232906c6f2df9dddc3d3
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -1218,6 +1257,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: OVRTouchSample
     className: Hand
+  - hash:
+      serializedVersion: 2
+      Hash: f0305a42381e542238e74c9c730abb3e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheckoutVideoFinish
   - hash:
       serializedVersion: 2
       Hash: 7d3b4419890d47df531f3744ef978ef0
@@ -1652,6 +1697,12 @@ ScriptsOnlyBuild:
     className: OvrAvatarMaterialManager
   - hash:
       serializedVersion: 2
+      Hash: 8ac898de683f7c2c1ff416f7e3339eda
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ActivateDesk
+  - hash:
+      serializedVersion: 2
       Hash: f97c73485ace05715ab217e1fe7b1b92
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit
@@ -1788,6 +1839,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SimpleCapsuleWithStickMovement
+  - hash:
+      serializedVersion: 2
+      Hash: e9a87749a9bbc1a56426644b263563e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FirstVideoFinish
   - hash:
       serializedVersion: 2
       Hash: 20acf3c1667c3fcaf430a03c1274c6e5
@@ -2118,19 +2175,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 9bf1f9c9bc8257c47d59032b3b92a7f6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CheckoutBeep
-  - hash:
-      serializedVersion: 2
-      Hash: 7dbfcc60a6b0d5d722c20714be28e268
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FirstVideoFinish
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/bradl/Documents/VR Work/SCDT55_CW2/Builds/TeleportationVR.exe
+  playerPath: C:/Users/bradl/Documents/VR Work/SCDT55_CW2/Builds/8.6.2021/TeleportationVR.exe

@@ -16,7 +16,6 @@ public class ActivateCleaning : MonoBehaviour
     {
         screen.SetActive(false);
         player = screen.GetComponent<VideoPlayer>();
-        spillWall.SetActive(false); //set to true
     }
 
     void Update()
@@ -35,7 +34,7 @@ public class ActivateCleaning : MonoBehaviour
     void ActivateCleaningScript()
     {
         screen.SetActive(true);
-        player.url = "Assets/Videos/SpillVideo.mp4";
+        player.url = Application.persistentDataPath + "/SpillVideo.mp4";
         player.Play();
         self.SetActive(false);
     }
