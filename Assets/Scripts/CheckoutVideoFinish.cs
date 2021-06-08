@@ -11,7 +11,6 @@ public class CheckoutVideoFinish : MonoBehaviour
     void Start()
     {
         player = vp.GetComponent<VideoPlayer>();
-        vp.SetActive(false);
     }
 
     void Update()

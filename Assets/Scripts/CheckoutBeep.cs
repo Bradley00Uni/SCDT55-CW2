@@ -66,7 +66,6 @@ public class CheckoutBeep : MonoBehaviour
 
     void Update()
     {
-
         if (a && m && s)
         {
             exitPlayer.SetActive(true);
@@ -74,7 +73,6 @@ public class CheckoutBeep : MonoBehaviour
 
             exit.loopPointReached += EndSection;
         }
-        player.loopPointReached += EndVideo;
     }
 
 

@@ -13,8 +13,8 @@ public class ActivateCheckout : MonoBehaviour
 
     void Start()
     {
-        checkoutVideo.SetActive(false);
        vp = checkoutVideo.GetComponent<VideoPlayer>();
+       checkoutVideo.SetActive(false);
     }
 
     void Update()
@@ -32,7 +32,6 @@ public class ActivateCheckout : MonoBehaviour
 
     void ActivateCheckoutScript()
     {
-            checkoutVideo.SetActive(true);
             vp.url = Application.persistentDataPath + "/CheckoutVideo.mp4";
             checkoutVideo.SetActive(true);
             checkoutWall.SetActive(true);
