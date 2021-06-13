@@ -73,6 +73,7 @@ public class CheckoutBeep : MonoBehaviour
 
             exit.loopPointReached += EndSection;
         }
+        player.loopPointReached += EndVideo;
     }
 
 
